@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planets — Astronomad</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> Astronomad</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="planets.html" class="active">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="page-header">
+    <span class="hero-badge">🪐 Solar System</span>
+    <h1>The <span class="gradient-text">Planets</span></h1>
+    <p>Explore the eight worlds that orbit our Sun. Click on the planet cards below to reveal detailed facts, statistics, and NASA mission history.</p>
+  </section>
+
+  <!-- ================= INTRO STATS ================= -->
+  <section class="stats-section" style="padding-top: 0; padding-bottom: 2rem;">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">8</span>
+        <span class="stat-label">Major Planets</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">4.6B</span>
+        <span class="stat-label">Years since formation</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">290+</span>
+        <span class="stat-label">Known Moons</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Star (The Sun)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLANET CARDS (VISUAL PREVIEW) ================= -->
+  <section class="features">
+    <h2 class="section-title">Visual <span class="gradient-text">Overview</span></h2>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+      A quick look at the inner and outer planets of our Solar System.
+    </p>
+    
+    <div class="features-grid">
+      
+      <!-- Mercury -->
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA15162/PIA15162~medium.jpg" alt="Mercury" class="feature-img" />
+        <div class="feature-body">
+          <h3>☿ Mercury</h3>
+          <p>The smallest and fastest planet. It has no atmosphere to trap heat, causing extreme temperature swings.</p>
+        </div>
+      </div>
+
+      <!-- Venus -->
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA00271/PIA00271~medium.jpg" alt="Venus" class="feature-img" />
+        <div class="feature-body">
+          <h3>♀ Venus</h3>
+          <p>Earth's twin in size, but with a toxic atmosphere and surface hot enough to melt lead.</p>
+        </div>
+      </div>
+
+      <!-- Earth -->
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~medium.jpg" alt="Earth" class="feature-img" />
+        <div class="feature-body">
+          <h3>🌍 Earth</h3>
+          <p>The only known planet with life. A perfect balance of water, atmosphere, and magnetic protection.</p>
+        </div>
+      </div>
+
+      <!-- Mars -->
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~medium.jpg" alt="Mars" class="feature-img" />
+        <div class="feature-body">
+          <h3>♂ Mars</h3>
+          <p>The Red Planet. Home to the tallest volcano and the deepest canyon in the Solar System.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ACCORDION (TASK 2) ================= -->
+  <section class="accordion-section" style="padding-top: 2rem;">
+    <h2 class="section-title">Detailed <span class="gradient-text">Facts</span></h2>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+      Click on each planet's name to expand and read more.
+    </p>
+    
+    <div class="accordion">
+      
+      <!-- Mercury -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">☿ Mercury</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Mercury</strong> is the smallest planet in our Solar System and the closest to the Sun. It has no atmosphere, so temperatures swing from −180°C at night to 430°C during the day.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 59 Earth days</li>
+            <li><strong>Year Length:</strong> 88 Earth days</li>
+            <li><strong>Moons:</strong> 0</li>
+            <li><strong>NASA Mission:</strong> MESSENGER (2004–2015) mapped its entire surface.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Venus -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">♀ Venus</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Venus</strong> is the second planet from the Sun and the hottest planet in our Solar System (about 465°C). It has a runaway greenhouse effect caused by a thick atmosphere of carbon dioxide and sulfuric acid clouds.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 243 Earth days (retrograde)</li>
+            <li><strong>Year Length:</strong> 225 Earth days</li>
+            <li><strong>Moons:</strong> 0</li>
+            <li><strong>NASA Mission:</strong> Magellan mapped the surface using radar in the 1990s.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Earth -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">🌍 Earth</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Earth</strong> is the third planet from the Sun and the only astronomical object known to harbor life. About 71% of Earth's surface is covered with water.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 24 hours</li>
+            <li><strong>Year Length:</strong> 365.25 days</li>
+            <li><strong>Moons:</strong> 1 (The Moon)</li>
+            <li><strong>NASA Mission:</strong> Landsat and Earth Observing System monitor climate and weather.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mars -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">♂ Mars</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Mars</strong> is the fourth planet from the Sun and the second-smallest planet. It is a dusty, cold, desert world with a very thin atmosphere. It's known as the "Red Planet" due to iron oxide on its surface.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 24.6 hours</li>
+            <li><strong>Year Length:</strong> 687 Earth days</li>
+            <li><strong>Moons:</strong> 2 (Phobos and Deimos)</li>
+            <li><strong>NASA Mission:</strong> Perseverance rover is currently exploring Jezero Crater.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Jupiter -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">♃ Jupiter</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Jupiter</strong> is the largest planet in our Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets combined. Its Great Red Spot is a giant storm larger than Earth.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 9.9 hours</li>
+            <li><strong>Year Length:</strong> 11.8 Earth years</li>
+            <li><strong>Moons:</strong> 95 (including Europa, Ganymede, Io, and Callisto)</li>
+            <li><strong>NASA Mission:</strong> Juno is currently orbiting and studying the planet.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Saturn -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">♄ Saturn</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Saturn</strong> is the sixth planet from the Sun and the second-largest in the Solar System. It is a gas giant with an average radius of about nine and a half times that of Earth. It has the most spectacular ring system.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 10.7 hours</li>
+            <li><strong>Year Length:</strong> 29.4 Earth years</li>
+            <li><strong>Moons:</strong> 146 (including Titan and Enceladus)</li>
+            <li><strong>NASA Mission:</strong> Cassini spent 13 years studying Saturn and its moons.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Uranus -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">♅ Uranus</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Uranus</strong> is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. It is an ice giant, and it rotates on its side.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 17.2 hours</li>
+            <li><strong>Year Length:</strong> 84 Earth years</li>
+            <li><strong>Moons:</strong> 27 (including Titania and Oberon)</li>
+            <li><strong>NASA Mission:</strong> Voyager 2 is the only spacecraft to visit Uranus (1986).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Neptune -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="planet-name">♆ Neptune</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Neptune</strong> is the eighth and farthest known planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.</p>
+          <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-muted);">
+            <li><strong>Day Length:</strong> 16.1 hours</li>
+            <li><strong>Year Length:</strong> 165 Earth years</li>
+            <li><strong>Moons:</strong> 14 (including Triton)</li>
+            <li><strong>NASA Mission:</strong> Voyager 2 captured the first close-up images in 1989.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">✦</span> Astronomad
+        <p>Exploring the universe, one page at a time. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-team">
+        <h4>Author</h4>
+        <p><strong>Name:</strong> Smail Balaussa</p>
+        <p><strong>Group:</strong> SE-2505</p>
+        <p><strong>Individual Work</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Smail Balaussa. All rights reserved.</p>
+      <p>Designed &amp; developed by <strong>Smail Balaussa</strong></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

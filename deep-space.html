@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Space — Astronomad</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> Astronomad</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html" class="active">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="page-header">
+    <span class="hero-badge">🌌 Beyond the Solar System</span>
+    <h1>Deep <span class="gradient-text">Space</span></h1>
+    <p>Journey beyond our cosmic neighborhood. Explore nebulae, galaxies, and the farthest reaches of the universe captured by NASA's most powerful telescopes.</p>
+  </section>
+
+  <!-- ================= INTRO STATS ================= -->
+  <section class="stats-section" style="padding-top: 0;">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">13.8B</span>
+        <span class="stat-label">Years since Big Bang</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">93B</span>
+        <span class="stat-label">Light-years (Observable)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">2T+</span>
+        <span class="stat-label">Estimated Galaxies</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">~0</span>
+        <span class="stat-label">Edges of the Universe</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEEP SPACE CARDS ================= -->
+  <section class="deep-space-section" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem 4rem;">
+    <div class="deep-grid" style="display: flex; flex-direction: column; gap: 2.5rem;">
+      
+      <!-- Card 1 -->
+      <div class="deep-card" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: all 0.3s;">
+        <img src="https://images-assets.nasa.gov/image/PIA12235/PIA12235~medium.jpg" alt="Carina Nebula" style="width: 100%; height: 100%; min-height: 350px; object-fit: cover;" />
+        <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+          <span class="hero-badge" style="margin-bottom: 1rem; display: inline-block; width: fit-content;">🌟 Star Birth</span>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Carina Nebula — "Cosmic Cliffs"</h3>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+            NASA's James Webb Space Telescope captured this stunning infrared view of the Carina Nebula, revealing previously invisible areas of star birth. Located 7,600 light-years away, this "landscape" of gas and dust is actually the edge of a massive star-forming region. The tallest "peaks" in this image are about 7 light-years high.
+          </p>
+          <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--accent); font-weight: 600;">
+            Credit: NASA, ESA, CSA, STScI
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="deep-card" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: all 0.3s;">
+        <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; order: 1;">
+          <span class="hero-badge" style="margin-bottom: 1rem; display: inline-block; width: fit-content;">🌌 Galaxy Collision</span>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Stephan's Quintet</h3>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+            This visual grouping of five galaxies was captured by Webb in unprecedented detail. Four of the galaxies are actually interacting, locked in a cosmic dance that will eventually merge them into a single giant galaxy. The image contains over 150 million pixels and is constructed from about 1,000 separate image files.
+          </p>
+          <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--accent); font-weight: 600;">
+            Credit: NASA, ESA, CSA, STScI
+          </p>
+        </div>
+        <img src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg" alt="Stephan's Quintet" style="width: 100%; height: 100%; min-height: 350px; object-fit: cover; order: 2;" />
+      </div>
+
+      <!-- Card 3 -->
+      <div class="deep-card" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: all 0.3s;">
+        <img src="https://images-assets.nasa.gov/image/PIA23122/PIA23122~medium.jpg" alt="Deep Field" style="width: 100%; height: 100%; min-height: 350px; object-fit: cover;" />
+        <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+          <span class="hero-badge" style="margin-bottom: 1rem; display: inline-block; width: fit-content;">🔭 Distant Universe</span>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Webb's First Deep Field</h3>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+            The deepest and sharpest infrared image of the distant universe ever taken. This slice of space — about the size of a grain of sand held at arm's length — contains thousands of galaxies, some of which formed just 300 million years after the Big Bang. The light from the farthest galaxies took over 13 billion years to reach us.
+          </p>
+          <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--accent); font-weight: 600;">
+            Credit: NASA, ESA, CSA, STScI
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="deep-card" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: all 0.3s;">
+        <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; order: 1;">
+          <span class="hero-badge" style="margin-bottom: 1rem; display: inline-block; width: fit-content;">💫 Stellar Death</span>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; color: #fff; font-size: 1.8rem; margin-bottom: 1rem;">Southern Ring Nebula</h3>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+            A planetary nebula 2,500 light-years away, captured by Webb's NIRCam and MIRI instruments. It shows a dying star shedding its outer layers, creating intricate rings of gas and dust. The dimmer star at the center has been sending out these rings for thousands of years. This nebula offers a glimpse of what our Sun might look like in its final stages.
+          </p>
+          <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--accent); font-weight: 600;">
+            Credit: NASA, ESA, CSA, STScI
+          </p>
+        </div>
+        <img src="https://images-assets.nasa.gov/image/PIA12236/PIA12236~medium.jpg" alt="Southern Ring Nebula" style="width: 100%; height: 100%; min-height: 350px; object-fit: cover; order: 2;" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SPACE TELESCOPES INFO ================= -->
+  <section class="features" style="padding-top: 2rem;">
+    <h2 class="section-title">Eyes on the <span class="gradient-text">Universe</span></h2>
+    <div class="features-grid">
+      
+      <div class="feature-card">
+        <div class="feature-body" style="text-align: center; padding: 2.5rem 1.5rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🔭</div>
+          <h3>James Webb Space Telescope</h3>
+          <p>The most powerful space telescope ever built. It observes the universe in infrared light, revealing the first galaxies and studying exoplanet atmospheres.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-body" style="text-align: center; padding: 2.5rem 1.5rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🌌</div>
+          <h3>Hubble Space Telescope</h3>
+          <p>Launched in 1990, Hubble has made over 1.5 million observations, helped determine the age of the universe, and captured iconic images like the "Pillars of Creation".</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MIND-BLOWING FACT ================= -->
+  <section style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem 4rem; text-align: center;">
+    <h2 class="section-title">Mind-Blowing <span class="gradient-text">Fact</span></h2>
+    <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(34, 211, 238, 0.08)); border: 1px solid var(--border); border-radius: 24px; padding: 3rem 2rem; box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15);">
+      <p style="color: var(--text); font-size: 1.2rem; line-height: 1.8; font-style: italic;">
+        "If you could travel at the speed of light (300,000 km/s), it would still take you <strong>100,000 years</strong> to cross the Milky Way galaxy from end to end. And the Milky Way is just one of over 2 trillion galaxies in the observable universe."
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">✦</span> Astronomad
+        <p>Exploring the universe, one page at a time. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-team">
+        <h4>Author</h4>
+        <p><strong>Name:</strong> Smail Balaussa</p>
+        <p><strong>Group:</strong> SE-2505</p>
+        <p><strong>Individual Work</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Smail Balaussa. All rights reserved.</p>
+      <p>Designed &amp; developed by <strong>Smail Balaussa</strong></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

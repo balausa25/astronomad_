@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missions — Astronomad</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> Astronomad</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html" class="active">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="page-header">
+    <span class="hero-badge">🚀 Exploring Space</span>
+    <h1>NASA <span class="gradient-text">Missions</span></h1>
+    <p>From the James Webb Space Telescope to the Perseverance Rover, discover the missions that are pushing the boundaries of human knowledge.</p>
+  </section>
+
+  <!-- ================= HIGHLIGHT MISSIONS ================= -->
+  <section class="features" style="padding-top: 0;">
+    <h2 class="section-title">Flagship <span class="gradient-text">Missions</span></h2>
+    <div class="features-grid">
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA23122/PIA23122~medium.jpg" alt="James Webb" class="feature-img" />
+        <div class="feature-body">
+          <h3>James Webb Space Telescope</h3>
+          <p>The most powerful space telescope ever built, observing the universe in infrared to reveal the first galaxies.</p>
+        </div>
+      </div>
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA23331/PIA23331~medium.jpg" alt="Perseverance" class="feature-img" />
+        <div class="feature-body">
+          <h3>Perseverance Rover</h3>
+          <p>Exploring Mars' Jezero Crater, searching for signs of ancient microbial life and collecting samples.</p>
+        </div>
+      </div>
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA12235/PIA12235~medium.jpg" alt="Hubble" class="feature-img" />
+        <div class="feature-body">
+          <h3>Hubble Space Telescope</h3>
+          <p>Launched in 1990, Hubble revolutionized astronomy and captured the iconic "Deep Field" images.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DETAILED MISSION CARDS ================= -->
+  <section class="missions-section" style="padding-top: 2rem;">
+    <h2 class="section-title">Mission <span class="gradient-text">Details</span></h2>
+    
+    <div class="mission-card">
+      <div class="mission-icon">🔭</div>
+      <h3>James Webb Space Telescope (JWST)</h3>
+      <p>Launched in December 2021, Webb is the most powerful space telescope ever built. Orbiting 1.5 million km from Earth, it observes the universe in infrared light, revealing the first galaxies, studying exoplanet atmospheres, and capturing stunning images of star birth and death. Its golden mirror is 6.5 meters wide — over 6 times larger than Hubble's.</p>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-icon">🔴</div>
+      <h3>Perseverance Mars Rover</h3>
+      <p>Landing in Jezero Crater in February 2021, Perseverance is searching for signs of ancient microbial life. It has collected rock samples for future return, deployed the Ingenuity helicopter (first powered flight on another planet), and is testing technology for human missions to Mars. It also produces oxygen from the Martian atmosphere using the MOXIE instrument.</p>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-icon">🌕</div>
+      <h3>Artemis Program</h3>
+      <p>NASA's Artemis program aims to return humans to the Moon and establish a sustainable presence. Artemis II sent astronauts around the Moon for the first time in over 50 years, capturing 11,000+ high-resolution images. Artemis III will land the first woman and person of color on the lunar surface. The program will also build the Gateway space station in lunar orbit.</p>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-icon">🪐</div>
+      <h3>Juno — Jupiter Orbiter</h3>
+      <p>Since 2016, Juno has been studying Jupiter's atmosphere, magnetic field, and interior. It discovered that Jupiter's poles are covered in massive cyclones, measured the depth of the Great Red Spot, and revealed that the planet's core is "fuzzy" — not solid like previously thought. Juno's solar panels are the largest ever flown on a planetary mission.</p>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-icon">☀️</div>
+      <h3>Parker Solar Probe</h3>
+      <p>The first spacecraft to "touch" the Sun, Parker has flown through the Sun's corona, sampling particles and magnetic fields. It has revealed new details about solar wind, coronal heating, and space weather — helping protect Earth's technology from solar storms. It travels at 690,000 km/h, making it the fastest human-made object ever.</p>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-icon">🌌</div>
+      <h3>Voyager 1 &amp; 2</h3>
+      <p>Launched in 1977, the Voyager probes explored the outer planets and are now in interstellar space. Voyager 1 is the most distant human-made object, over 24 billion kilometers from Earth. Both carry the "Golden Record," a message to any future discoverers.</p>
+    </div>
+  </section>
+
+  <!-- ================= UPCOMING MISSIONS TABLE ================= -->
+  <section style="max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem 4rem;">
+    <h2 class="section-title">Upcoming <span class="gradient-text">Launches</span></h2>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+          <tr style="background: rgba(139, 92, 246, 0.2); border-bottom: 1px solid var(--border);">
+            <th style="padding: 1rem 1.5rem; color: #fff;">Mission</th>
+            <th style="padding: 1rem 1.5rem; color: #fff;">Target</th>
+            <th style="padding: 1rem 1.5rem; color: #fff;">Launch Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <td style="padding: 1rem 1.5rem; color: var(--text);">Europa Clipper</td>
+            <td style="padding: 1rem 1.5rem; color: var(--text-muted);">Jupiter's Moon Europa</td>
+            <td style="padding: 1rem 1.5rem; color: var(--text-muted);">October 2024</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <td style="padding: 1rem 1.5rem; color: var(--text);">Artemis III</td>
+            <td style="padding: 1rem 1.5rem; color: var(--text-muted);">The Moon (South Pole)</td>
+            <td style="padding: 1rem 1.5rem; color: var(--text-muted);">2026</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem 1.5rem; color: var(--text);">Dragonfly</td>
+            <td style="padding: 1rem 1.5rem; color: var(--text-muted);">Saturn's Moon Titan</td>
+            <td style="padding: 1rem 1.5rem; color: var(--text-muted);">2028</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">✦</span> Astronomad
+        <p>Exploring the universe, one page at a time. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-team">
+        <h4>Author</h4>
+        <p><strong>Name:</strong> Smail Balaussa</p>
+        <p><strong>Group:</strong> SE-2505</p>
+        <p><strong>Individual Work</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Smail Balaussa. All rights reserved.</p>
+      <p>Designed &amp; developed by <strong>Smail Balaussa</strong></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
