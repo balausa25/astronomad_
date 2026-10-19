@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Astronomad</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> Astronomad</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="page-header">
+    <span class="hero-badge">🌌 Real Planetary Images</span>
+    <h1>Cosmic <span class="gradient-text">Gallery</span></h1>
+    <p>Explore the stunning beauty of our Solar System through real, high-resolution images of all eight planets.</p>
+  </section>
+
+  <!-- ================= BACKGROUND COLOR CONTROL (TASK 4) ================= -->
+  <section class="color-section">
+    <button id="colorBtn" class="btn btn-primary">🎨 Change Background Color</button>
+  </section>
+
+  <!-- ================= PLANET GALLERY ================= -->
+  <section class="gallery-section">
+    <h2 class="section-title">The <span class="gradient-text">Planets</span></h2>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+      From the scorching surface of Mercury to the icy winds of Neptune, explore the diverse worlds of our cosmic neighborhood.
+    </p>
+    
+    <div class="gallery-grid">
+      
+      <!-- 1. Mercury -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="https://images-assets.nasa.gov/image/PIA15162/PIA15162~medium.jpg" alt="Mercury" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>☿ Mercury</h3>
+          <p><strong>The Swift Planet.</strong> Mercury is the smallest planet and closest to the Sun. It has extreme temperature swings from −180°C to 430°C due to having no atmosphere.</p>
+        </div>
+      </div>
+
+      <!-- 2. Venus -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="https://images-assets.nasa.gov/image/PIA00271/PIA00271~medium.jpg" alt="Venus" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>♀ Venus</h3>
+          <p><strong>Earth's Twin.</strong> Venus is similar in size to Earth, but its thick, toxic atmosphere creates a runaway greenhouse effect, making it the hottest planet.</p>
+        </div>
+      </div>
+
+      <!-- 3. Earth -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~medium.jpg" alt="Earth" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>🌍 Earth</h3>
+          <p><strong>The Blue Marble.</strong> Our home planet is the only known world to harbor life. With liquid water covering 71% of its surface, it's a true oasis.</p>
+        </div>
+      </div>
+
+      <!-- 4. Mars -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~medium.jpg" alt="Mars" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>♂ Mars</h3>
+          <p><strong>The Red Planet.</strong> Mars is a dusty, cold, desert world with a very thin atmosphere. It's home to Olympus Mons, the tallest volcano in the solar system.</p>
+        </div>
+      </div>
+
+      <!-- 5. Jupiter -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="https://images-assets.nasa.gov/image/PIA22946/PIA22946~medium.jpg" alt="Jupiter" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>♃ Jupiter</h3>
+          <p><strong>The Gas Giant.</strong> Jupiter is the largest planet in our solar system. Its iconic Great Red Spot is a massive storm that has been raging for centuries.</p>
+        </div>
+      </div>
+
+      <!-- 6. Saturn (СІЗДІҢ СУРЕТІҢІЗ) -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="images/saturn.jpg" alt="Saturn" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>♄ Saturn</h3>
+          <p><strong>The Ringed Giant.</strong> Saturn is famous for its spectacular ring system, made of billions of ice and rock particles. It is the least dense planet.</p>
+        </div>
+      </div>
+
+      <!-- 7. Uranus (СІЗДІҢ СУРЕТІҢІЗ) -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="images/uranus.jpg" alt="Uranus" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>♅ Uranus</h3>
+          <p><strong>The Tilted Ice Giant.</strong> Uranus rotates on its side, likely due to a massive collision. Its pale blue color comes from methane in its atmosphere.</p>
+        </div>
+      </div>
+
+      <!-- 8. Neptune -->
+      <div class="gallery-card">
+        <div class="gallery-img-wrapper">
+          <img src="https://images-assets.nasa.gov/image/PIA01492/PIA01492~medium.jpg" alt="Neptune" class="gallery-img" />
+        </div>
+        <div class="gallery-info">
+          <h3>♆ Neptune</h3>
+          <p><strong>The Windy World.</strong> Neptune is the eighth and farthest known planet from the Sun. It's a dark, cold, and incredibly windy world.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= DEEP SPACE PREVIEW ================= -->
+  <section class="features" style="padding-top: 2rem;">
+    <h2 class="section-title">Beyond the <span class="gradient-text">Planets</span></h2>
+    <div class="features-grid">
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA12235/PIA12235~medium.jpg" alt="Carina Nebula" class="feature-img" />
+        <div class="feature-body">
+          <h3>Carina Nebula</h3>
+          <p>Cosmic Cliffs — star birth captured by the James Webb Space Telescope.</p>
+        </div>
+      </div>
+      <div class="feature-card image-card">
+        <img src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg" alt="Stephan's Quintet" class="feature-img" />
+        <div class="feature-body">
+          <h3>Stephan's Quintet</h3>
+          <p>A visual grouping of five galaxies, four of which are interacting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY CTA ================= -->
+  <section class="cta" style="margin-top: 2rem;">
+    <h2>Want to see more?</h2>
+    <p>Explore our Deep Space section for galaxies, nebulae, and more.</p>
+    <a href="deep-space.html" class="btn btn-primary">Explore Deep Space →</a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">✦</span> Astronomad
+        <p>Exploring the universe, one page at a time. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-team">
+        <h4>Author</h4>
+        <p><strong>Name:</strong> Smail Balaussa</p>
+        <p><strong>Group:</strong> SE-2505</p>
+        <p><strong>Individual Work</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Smail Balaussa. All rights reserved.</p>
+      <p>Designed &amp; developed by <strong>Smail Balaussa</strong></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

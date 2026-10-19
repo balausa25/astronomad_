@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Astronomad</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> Astronomad</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="page-header">
+    <span class="hero-badge">📬 Get in touch</span>
+    <h1>Contact <span class="gradient-text">Me</span></h1>
+    <p>Have a question about space? Want to collaborate? Or just want to say hello? Reach out directly or fill out the form below!</p>
+  </section>
+
+  <!-- ================= DIRECT CONTACT INFO ================= -->
+  <section class="contact-info" style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem 3rem;">
+    <div class="contact-info-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+      
+      <div class="contact-info-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; text-align: center;">
+        <span class="contact-info-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">📞</span>
+        <h3 style="color: #fff; margin-bottom: 0.5rem;">Call or Text</h3>
+        <p style="color: var(--text-muted); font-size: 1.1rem; font-weight: 600;">
+          <a href="tel:+87770639509" style="color: var(--accent); text-decoration: none;">8 777 063 9509</a>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">Available 9:00 AM - 8:00 PM (Astana Time)</p>
+      </div>
+
+      <div class="contact-info-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; text-align: center;">
+        <span class="contact-info-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">📧</span>
+        <h3 style="color: #fff; margin-bottom: 0.5rem;">Email Me</h3>
+        <p style="color: var(--text-muted); font-size: 1.1rem; font-weight: 600;">
+          <a href="mailto:s_balaussa07@mail.ru" style="color: var(--accent); text-decoration: none;">s_balaussa07@mail.ru</a>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">I usually reply within 24 hours.</p>
+      </div>
+
+      <div class="contact-info-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; text-align: center;">
+        <span class="contact-info-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">📍</span>
+        <h3 style="color: #fff; margin-bottom: 0.5rem;">Location</h3>
+        <p style="color: var(--text-muted); font-size: 1.1rem; font-weight: 600;">Astana, Kazakhstan</p>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">Group: SE-2505</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= REGISTRATION / MESSAGE FORM (TASK 1) ================= -->
+  <section class="form-section" style="max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem 4rem;">
+    <h2 class="section-title">Send a <span class="gradient-text">Message</span></h2>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+      Fill out this form to create a simulated account and send me a direct message.
+    </p>
+
+    <form id="registerForm" class="contact-form" novalidate style="background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem 2rem;">
+      
+      <!-- Name Field -->
+      <div class="field" style="margin-bottom: 1.3rem;">
+        <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text);">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; background: rgba(255, 255, 255, 0.95); color: #222;" />
+        <small class="error" id="nameError" style="color: var(--danger); font-size: 0.82rem; display: block; min-height: 1em; margin-top: 0.3rem;"></small>
+      </div>
+
+      <!-- Email Field -->
+      <div class="field" style="margin-bottom: 1.3rem;">
+        <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text);">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; background: rgba(255, 255, 255, 0.95); color: #222;" />
+        <small class="error" id="emailError" style="color: var(--danger); font-size: 0.82rem; display: block; min-height: 1em; margin-top: 0.3rem;"></small>
+      </div>
+
+      <!-- Phone Number Field -->
+      <div class="field" style="margin-bottom: 1.3rem;">
+        <label for="phone" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text);">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (777) 123-4567" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; background: rgba(255, 255, 255, 0.95); color: #222;" />
+        <small style="color: var(--text-muted); font-size: 0.8rem;">Leave your number if you want me to call you back.</small>
+      </div>
+
+      <!-- Password Field -->
+      <div class="field" style="margin-bottom: 1.3rem;">
+        <label for="password" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text);">Password * (min 6 characters)</label>
+        <input type="password" id="password" name="password" placeholder="••••••" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; background: rgba(255, 255, 255, 0.95); color: #222;" />
+        <small class="error" id="passwordError" style="color: var(--danger); font-size: 0.82rem; display: block; min-height: 1em; margin-top: 0.3rem;"></small>
+      </div>
+
+      <!-- Confirm Password Field -->
+      <div class="field" style="margin-bottom: 1.3rem;">
+        <label for="confirmPassword" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text);">Confirm Password *</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; background: rgba(255, 255, 255, 0.95); color: #222;" />
+        <small class="error" id="confirmError" style="color: var(--danger); font-size: 0.82rem; display: block; min-height: 1em; margin-top: 0.3rem;"></small>
+      </div>
+
+      <!-- Message Textarea -->
+      <div class="field" style="margin-bottom: 1.5rem;">
+        <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--text);">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here. I'd love to hear from you!" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 12px; font-size: 1rem; background: rgba(255, 255, 255, 0.95); color: #222; font-family: inherit; resize: vertical;"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-full" style="width: 100%;">Send Message ✉️</button>
+      
+      <!-- Success Message -->
+      <p id="formSuccess" class="success" style="color: var(--success); font-weight: 600; margin-top: 1rem; text-align: center;"></p>
+
+    </form>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="faq-section" style="max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem 4rem;">
+    <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+    
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2rem;">
+      
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="color: #fff; margin-bottom: 0.5rem;">How long does it take you to reply?</h3>
+        <p style="color: var(--text-muted);">I usually reply to emails and messages within 24 hours, especially on weekdays. If it's urgent, feel free to call me directly!</p>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="color: #fff; margin-bottom: 0.5rem;">Can we collaborate on a project?</h3>
+        <p style="color: var(--text-muted);">Absolutely! I'm always open to working on exciting web development or astronomy-related projects. Use the form above or email me with your ideas.</p>
+      </div>
+
+      <div>
+        <h3 style="color: #fff; margin-bottom: 0.5rem;">Is this website built using real NASA data?</h3>
+        <p style="color: var(--text-muted);">Yes! All the astronomical images and scientific facts on this website are sourced directly from NASA's public archives and official mission pages.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">✦</span> Astronomad
+        <p>Exploring the universe, one page at a time. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="deep-space.html">Deep Space</a>
+        <a href="missions.html">Missions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-team">
+        <h4>Author</h4>
+        <p><strong>Name:</strong> Smail Balaussa</p>
+        <p><strong>Group:</strong> SE-2505</p>
+        <p><strong>Individual Work</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Smail Balaussa. All rights reserved.</p>
+      <p>Designed &amp; developed by <strong>Smail Balaussa</strong></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
